@@ -1,12 +1,6 @@
-with customers as (
+select
+    id as customer_id,
+    first_name,
+    last_name
 
-    select
-        id as customer_id,
-        first_name,
-        last_name
-
-    from tgag.jaffle_shop.customers
-
-),
-
-select * from customers;
+from tgag.jaffle_shop.customers
